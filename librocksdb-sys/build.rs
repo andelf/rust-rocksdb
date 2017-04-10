@@ -36,6 +36,7 @@ fn build_rocksdb() {
 
     config.define("NDEBUG", Some("1"));
     config.define("SNAPPY", Some("1"));
+    config.define("LZ4", Some("1"));
 
     let mut lib_sources = include_str!("rocksdb_lib_sources.txt")
         .split(" ")
